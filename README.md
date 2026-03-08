@@ -25,23 +25,16 @@ Metabase (Dashboard e visualização)
 Ferramentas utilizadas:
 
 Google Cloud Storage
-
 Google BigQuery
-
 Metabase
-
 Docker
-
 SQL
-
 GitHub
 
 ⚙️ Infraestrutura
 
 O Metabase foi executado localmente utilizando Docker para facilitar a criação do ambiente de visualização de dados.
-
 Exemplo de execução do container:
-
 docker run -d -p 3000:3000 --name metabase metabase/metabase
 
 Após executar o container, o Metabase fica disponível em:
@@ -69,13 +62,9 @@ README.md
 Durante o projeto foram criadas algumas métricas importantes para análise dos filmes:
 
 Média de avaliação dos filmes
-
 Quantidade de avaliações
-
 Avaliações por ano de lançamento
-
 Filmes mais bem avaliados
-
 Essas métricas alimentam os dashboards no Metabase.
 
 🧠 Exemplo de Query SQL
@@ -101,13 +90,9 @@ ORDER BY year
 O dashboard foi criado no Metabase para visualizar as principais métricas do projeto.
 
 Exemplos de visualizações:
-
 Distribuição de ratings
-
 Popularidade dos filmes
-
 Filmes mais bem avaliados
-
 Análise por ano de lançamento
 
 📸 Dashboard:
@@ -119,23 +104,12 @@ Análise por ano de lançamento
 O principal objetivo deste projeto foi praticar um fluxo completo de dados utilizando ferramentas utilizadas no mercado de dados, incluindo:
 
 ingestão de dados
-
 modelagem analítica
-
 criação de métricas
-
 visualização de dados
-
 Esse tipo de projeto é muito comum em ambientes de Data Analytics e Business Intelligence.
 
 👨‍💻 Autor
 
 Projeto desenvolvido por Vitor Ferrari Mendes como parte dos estudos em:
 
-Data Analytics
-
-SQL
-
-Cloud Data Platforms
-
-Business Intelligence
