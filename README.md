@@ -117,7 +117,7 @@ Projeto desenvolvido por Vitor Ferrari Mendes como parte dos estudos em:
   <img src="Captura de tela 2026-03-08 180526.jpg" width="800">
 </p>
 <p align="center">
-  <img src="" width="800">
+  <img src="Untitled-2025-10-15-0115.excalidraw.png" width="800">
 </p>
 
 <p align="center">
