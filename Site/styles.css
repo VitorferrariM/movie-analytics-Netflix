@@ -1,0 +1,218 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #F8F9FA;
+    color: #333;
+    -webkit-font-smoothing: antialiased;
+}
+
+.app-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header & Filters */
+.top-header {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.header-title h1 {
+    font-size: 24px;
+    font-weight: 600;
+    color: #4A4A4A;
+}
+
+.filters-container {
+    display: flex;
+    gap: 20px;
+    background: white;
+    padding: 15px 20px;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+    border: 1px solid #EAEAEA;
+    flex-wrap: wrap;
+}
+
+.filter-group {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.filter-group label {
+    font-size: 13px;
+    font-weight: 500;
+    color: #666;
+}
+
+.filter-group select {
+    padding: 8px 12px;
+    border: 1px solid #DDD;
+    border-radius: 4px;
+    font-size: 14px;
+    background-color: #FAFAFA;
+    outline: none;
+    cursor: pointer;
+    min-width: 160px;
+}
+
+.filter-group select:focus {
+    border-color: #4A90E2;
+}
+
+/* Dashboard Layout */
+.dashboard-layout {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+}
+
+/* Left Sidebar KPIs */
+.kpi-sidebar {
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    flex-shrink: 0;
+}
+
+.kpi-card {
+    background: white;
+    border: 1px solid #EAEAEA;
+    border-radius: 6px;
+    padding: 20px;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.03);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 140px;
+}
+
+.kpi-card h3 {
+    font-size: 13px;
+    font-weight: 600;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.kpi-value {
+    font-size: 38px;
+    font-weight: 700;
+    color: #222;
+}
+
+/* Main Charts Grid */
+.charts-grid {
+    flex-grow: 1;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+}
+
+.chart-card {
+    background: white;
+    border: 1px solid #EAEAEA;
+    border-radius: 6px;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.03);
+    display: flex;
+    flex-direction: column;
+}
+
+.chart-header {
+    padding: 15px 20px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #333;
+    border-bottom: 1px solid #F0F0F0;
+}
+
+.chart-body {
+    padding: 15px;
+    flex-grow: 1;
+    position: relative;
+    height: 300px;
+}
+
+/* Responsive constraints for canvas */
+.chart-body canvas {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+/* Table container styling */
+.table-container {
+    overflow-y: auto;
+    padding: 0; /* Remove padding for flush table */
+}
+
+.data-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 13px;
+}
+
+.data-table th, .data-table td {
+    padding: 12px 20px;
+    text-align: left;
+    border-bottom: 1px solid #F0F0F0;
+}
+
+.data-table th {
+    color: #3B82F6;
+    background-color: #F9FAFB;
+    font-weight: 500;
+    font-size: 13px;
+}
+
+.data-table th:first-child {
+    border-top-left-radius: 6px;
+}
+.data-table th:last-child {
+    border-top-right-radius: 6px;
+}
+
+.data-table tr:last-child td {
+    border-bottom: none;
+}
+
+.data-table td {
+    color: #333;
+    font-weight: 500;
+}
+
+/* Basic Responsiveness */
+@media (max-width: 1024px) {
+    .dashboard-layout {
+        flex-direction: column;
+    }
+    .kpi-sidebar {
+        width: 100%;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .kpi-card {
+        flex: 1;
+        min-height: 100px;
+    }
+    .kpi-value {
+        font-size: 28px;
+    }
+}
+
+@media (max-width: 768px) {
+    .charts-grid {
+        grid-template-columns: 1fr;
+    }
+    .kpi-sidebar {
+        flex-direction: column;
+    }
+}
