@@ -121,7 +121,7 @@ Projeto desenvolvido por Vitor Ferrari Mendes como parte dos estudos em:
 </p>
 
 <p align="center">
-  <img src="" width="800">
+  <img src="Site.jpg" width="800">
 </p>
 
 
