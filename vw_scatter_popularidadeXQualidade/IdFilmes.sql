@@ -1,0 +1,1 @@
+SELECT movie_id FROM `desafioanalytics-489422.movielens_analytics.vw_scatter_popularity_vs_quality` LIMIT 1000

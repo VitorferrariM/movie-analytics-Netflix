@@ -1,0 +1,1 @@
+SELECT generos FROM `desafioanalytics-489422.movielens_analytics.dim_movies` LIMIT 1000

@@ -1,0 +1,1 @@
+SELECT user_id FROM `desafioanalytics-489422.movielens_analytics.fact_ratings` LIMIT 1000

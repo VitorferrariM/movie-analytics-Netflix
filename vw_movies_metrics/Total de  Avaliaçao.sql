@@ -1,0 +1,1 @@
+SELECT total_ratings FROM `desafioanalytics-489422.movielens_analytics.vw_movie_metrics` LIMIT 1000

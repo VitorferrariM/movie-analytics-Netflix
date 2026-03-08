@@ -1,0 +1,1 @@
+SELECT generos FROM `desafioanalytics-489422.movielens_analytics.vw_movie_kpis` LIMIT 1000

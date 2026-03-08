@@ -1,0 +1,1 @@
+SELECT num_ratings FROM `desafioanalytics-489422.movielens_analytics.vw_user_activity` LIMIT 1000

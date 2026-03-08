@@ -1,0 +1,1 @@
+SELECT avg_rating FROM `desafioanalytics-489422.movielens_analytics.vw_ratings_heatmap` LIMIT 1000
